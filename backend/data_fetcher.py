@@ -7,7 +7,7 @@ import pandas as pd
 import numpy as np
 
 logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger(__name__)
+fetcher = DataFetcher(use_ifind=True)
 
 class DataFetcher:
     def __init__(self, use_ifind=False):
